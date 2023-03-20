@@ -1,0 +1,16 @@
+@import url('//db.onlinewebfonts.com/c/150037e11f159dca84bc4c04549094b6?family=Averta-Regular');
+@import url('header-menu.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Averta-Regular";
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+  --primary-color: #0037d6;
+  --bg-inovacao: #ff0078;
+}

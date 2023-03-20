@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="//db.onlinewebfonts.com/c/150037e11f159dca84bc4c04549094b6?family=Averta-Regular" rel="stylesheet"
+        type="text/css" />
+    <title>Carta da Industria</title>
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            <a href="index.html"><img class="logo logo_firjan" src="assets/logo_firjan.png" alt="Logo Firjan"></a>
+            <a href="index.html"><img class="logo logo_carta" src="assets/logo_carta.png" alt="Logo Carta da Indústria"></a>
+            <div class="container">
+                <!-- <img class="search" src="assets/lupa.png" alt="buscar-logo">
+                <img class="close" src="assets/cancel.png" alt="buscar-logo"> -->
+                <img class="menu_icon" src="assets/menu.png" alt="menu-icon">
+                <img class="close_menu" src="assets/cancel.png" alt="close-menu">
+            </div>
+        </header>
+        <div class="menu">
+            <div>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <details>
+                            <summary>Categorias</summary>
+                            <li>Articulação</li>
+                            <li>Competitividade</li>
+                            <li>Economia</li>
+                            <li>Educação e Cultura</li>
+                            <li>Infraestrutura</li>
+                            <li>Inovação</li>
+                            <li>Institucional</li>
+                            <li>Negocios</li>
+                            <li>Sustentabilidade</li>
+                            <li>Promoção da Saude</li>
+                            <hr>
+                        </details>
+                    </li>
+                    <li><a href="#">Sobre a Carta</a></li>
+                    <li><a href="#">Edições antigas</a></li>
+                    <li><a href="#">Associe-se</a></li>
+                </ul>
+                <div class="buscar">
+                    <div class="buscar__search">
+                        <input type="text" name="buscar" placeholder="Digite aqui sua busca...">
+                        <img class="buscar__search-img" src="assets/lupa2.png" alt="buscar-logo">
+                    </div>
+                </div>
+            </div>
+            <div class="menu__footer">
+                <p>Siga as nossas redes</p>
+                <div>
+                    <a href=""><img class="menu__footer-img" src="assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href=""><img class="menu__footer-img" src="assets/instagram.png" alt="Instagram"></a>
+                    <a href=""><img class="menu__footer-img" src="assets/facebook.png" alt="Facebook"></a>
+                    <a href=""><img class="menu__footer-img" src="assets/twitter.png" alt="Twitter"></a>
+                    <a href=""><img class="menu__footer-img" src="assets/youtube.png" alt="Youtube"></a>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section *ngFor="let item of publicacoes"></section>
+        </main>
+
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
