@@ -4,21 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/post.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="css/post.css" />
     <title>Post</title>
 </head>
 <body>
-    <div>
+    <div class="spacing">
         <header class="header">
-            <a href="../../index.html"><img class="logo logo_firjan" src="assets/logo_firjan.png" alt="Logo Firjan"></a>
-            <a href="../../index.html"><img class="logo logo_carta" src="assets/logo_carta.png" alt="Logo Carta da Indústria"></a>
+            <a href="../../index.html"><img class="logo" src="../../assets/logo_v2b-2.png" alt="logo"></a>
             <div class="container">
-                <!-- <img class="search" src="assets/lupa.png" alt="buscar-logo">
-                <img class="close" src="assets/cancel.png" alt="buscar-logo"> -->
-                <img class="menu_icon" src="assets/menu.png" alt="menu-icon">
-                <img class="close_menu" src="assets/cancel.png" alt="close-menu">
+                <img class="search" src="../../assets/lupa.png" alt="buscar-logo">
+                <img class="close" src="../../assets/cancel.png" alt="buscar-logo">
+                <img class="menu_icon" src="../../assets/menu.png" alt="menu-icon">
+                <img class="close_menu" src="../../assets/cancel.png" alt="close-menu">
             </div>
+
+            <div class="buscar">
+                <div class="buscar__search">
+                    <input type="text" name="buscar" placeholder="Digite aqui sua busca...">
+                    <a href="../search.html"><img class="buscar__search-img" src="../../assets/lupa2.png" alt="buscar-logo"></a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../../index.html">Início</a></li>
+                    <details>
+                        <summary>Categorias</summary>
+                        <li>Articulação</li>
+                        <li>Competitividade</li>
+                        <li>Economia</li>
+                        <li>Educação e Cultura</li>
+                        <li>Infraestrutura</li>
+                        <li>Inovação</li>
+                        <li>Institucional</li>
+                        <li>Negocios</li>
+                        <li>Sustentabilidade</li>
+                        <li>Promoção da Saude</li>
+                        <hr>
+                    </details>
+                    <li><a href="#">Sobre a Carta</a></li>
+                    <li><a href="#">Edições antigas</a></li>
+                    <li><a href="#">Associe-se</a></li>
+                </ul>
+                <div class="menu-footer">
+                    <div class="social">
+                        <img class="logo_firjan" src="../../assets/logo_firjan.png" alt="Logo Firjan">
+                        <div> 
+                            <a href="https://www.linkedin.com/company/firjan/" target="_blank"><img src="../../assets/linkdin.png" alt="linkedin"></a>
+                            <a href="https://www.instagram.com/firjan/?hl=pt" target="_blank"><img src="../../assets/instagram.png" alt="instagram"></a>
+                            <a href="https://www.facebook.com/firjanoficial" target="_blank"><img src="../../assets/facebook.png" alt="facebook"></a>
+                            <a href="https://twitter.com/firjan" target="_blank"><img src="../../assets/twitter.png" alt="twitter"></a>
+                            <a href="http://www.youtube.com/user/sistemafirjan" target="_blank"><img src="../../assets/youtube.png" alt="youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </header>
+        <div class="gap"></div>
         <div class="menu">
             <div>
                 <ul>
@@ -68,7 +112,7 @@
                 <div class="content-header">
                     <div class="category-share">
                         <div class="category">
-                            <a href="#" style="background-color: rgb(17, 128, 0);">sustentabilidade</a>
+                            <a href="" class="categoria sustentabilidade">sustentabilidade</a>
                         </div>
                         <div class="share">
                             <img src="assets/share.png" alt="Compartilhar" />
@@ -95,6 +139,6 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
         </main>
     </div>
     
-    <script src="./js/script.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 </html>
