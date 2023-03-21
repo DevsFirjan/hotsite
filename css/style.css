@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +8,15 @@
     color: #fff;
 }
 
-:root{
-  --primary-color: #0037d6;
+:root {
+    --primary-color: #0037d6;
 
-  --sustentabilidade: #22a591;
-  --cultura: #fe7105;
-  --economia: #01adff;
-  --promocao: #9a3c70;
-  --inovacao: #ff0078;
-  --negocios: #4e4e4e;
+    --sustentabilidade: #22a591;
+    --cultura: #fe7105;
+    --economia: #01adff;
+    --promocao: #9a3c70;
+    --inovacao: #ff0078;
+    --negocios: #4e4e4e;
 }
 
 .sustentabilidade {
@@ -43,10 +43,11 @@
     background-color: var(--negocios);
 }
 
-.spacing .gap{
+.spacing .gap {
     height: 11vh;
     background-color: var(--primary-color);
 }
+
 /* header menu */
 .header {
     background-color: var(--primary-color);
@@ -56,19 +57,20 @@
     position: fixed;
     top: 0;
     left: 0;
-    
+
     display: flex;
     z-index: 3;
-    
+
     justify-content: space-between;
     align-items: center;
 }
 
-.header > a {
+.header>a {
     height: 100%;
-    
+
     display: flex;
 }
+
 .header a .logo {
     height: 70%;
     align-self: center;
@@ -80,7 +82,8 @@
     align-items: center;
     gap: 10px;
 }
- .search {
+
+.search {
     width: 35px;
 }
 
@@ -88,33 +91,39 @@
     width: 40px;
     display: none;
 }
-.close_menu{display: none;}
-.close_menu , .menu_icon {
+
+.close_menu {
+    display: none;
+}
+
+.close_menu,
+.menu_icon {
     width: 60px;
 }
+
 /* menu de busca */
 
 .buscar {
-background-color: var(--primary-color);
-display: none;
-position: absolute;
-top: calc(11vh - 1px);
-right: 0;
+    background-color: var(--primary-color);
+    display: none;
+    position: absolute;
+    top: calc(11vh - 1px);
+    right: 0;
 
-width: 100%;
-max-height: 0;
-overflow: hidden;
-transition: .3s;  
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
 
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .buscar__search {
     width: 80%;
     height: 80%;
     background-color: #fff;
-    border-radius:10px;
+    border-radius: 10px;
     padding: 0 10px;
     margin-bottom: 3vh;
     display: flex;
@@ -122,7 +131,7 @@ justify-content: center;
     align-items: center;
 }
 
-.buscar__search  input {
+.buscar__search input {
     border: none;
     width: 100%;
     height: 35px;
@@ -130,14 +139,16 @@ justify-content: center;
     font-weight: lighter;
 }
 
-.buscar__search  input:focus{
+.buscar__search input:focus {
     outline: none;
-    color:#6e6e6e;
+    color: #6e6e6e;
 }
-.buscar__search a{
+
+/* .buscar__search a {
     width: 10%;
-   
-}
+
+} */
+
 .buscar__search-img {
     width: 25px;
     height: 25px;
@@ -145,7 +156,7 @@ justify-content: center;
 
 /* sidebar menu */
 
-.menu{
+.menu {
     width: 0;
     height: 90vh;
     background-color: var(--primary-color);
@@ -162,7 +173,7 @@ justify-content: center;
 }
 
 .menu > * {
-    padding-right: 30px;
+    padding-right: 8%;
 }
 
 .menu ul {
@@ -172,24 +183,26 @@ justify-content: center;
     align-items: flex-end;
     padding-top: 10px;
 }
-.menu ul li{
+
+.menu ul li {
     margin: 4px;
 }
+
 .menu ul li a {
-   text-transform: uppercase;
-   font-family: "Averta-Regular";
-   font-weight: lighter;
-   font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Averta-Regular";
+    font-weight: lighter;
+    font-size: 1rem;
 }
 
 details {
     text-align: right;
     font-size: 14px;
-    text-transform: uppercase;
 }
 
-details summary{
-    font-size: 15px;
+details summary {
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 /* .social {
@@ -219,6 +232,7 @@ details summary{
 
 .social .logo_firjan {
     width: 60%;
+    max-width: 150px;
 }
 
 .social div img {
@@ -227,7 +241,7 @@ details summary{
 }
 
 .social div a {
-    margin:0 3px
+    margin: 0 3px
 }
 
 /*
@@ -241,12 +255,13 @@ details summary{
 
 /* MAIN sections */
 
-.section, .ads {
+.section,
+.ads {
     width: 100%;
     height: 30vh;
     overflow: hidden;
     position: relative;
-    
+
 }
 
 .grafico {
@@ -273,6 +288,7 @@ details summary{
     align-self: flex-start;
     padding-left: 40px;
 }
+
 .section .texts {
     position: absolute;
     bottom: 0;
@@ -281,13 +297,13 @@ details summary{
     height: 50%;
 }
 
-.section .texts h2{
+.section .texts h2 {
     margin-top: 5px;
     font-size: 14px;
 
 }
 
-.categoria{
+.categoria {
     padding: 2px 5px;
     border-radius: 5px;
     text-transform: uppercase;
@@ -307,17 +323,17 @@ details summary{
 
 .ads img {
     width: 80%;
-    height: 20vh; 
-} 
+    height: 20vh;
+}
 
 
 /* Categories */
-.main__categories{
+.main__categories {
     background-color: #fff;
     height: 100vh;
 }
 
-.categories{
+.categories {
     background-color: #f2f2f2;
     min-height: 30vh;
     position: relative;
@@ -329,6 +345,7 @@ details summary{
     bottom: -1px;
     width: 100%;
 }
+
 .categories h2 {
     color: #4e4e4e;
     font-family: "Averta-Regular";
@@ -354,18 +371,20 @@ details summary{
     text-transform: uppercase;
 }
 
-.filter{
+.filter {
     padding-top: 15px;
 }
 
-.filter section  {
-    margin:0 0  15px 15px;
+.filter section {
+    margin: 0 0 15px 15px;
 }
+
 .filter section span {
-    color:#9b9b9b ;
+    color: #9b9b9b;
     font-size: 1rem;
 }
-.filter section h2{
+
+.filter section h2 {
     color: #17619f;
     font-size: 1.5rem;
 }
@@ -383,4 +402,129 @@ details summary{
 .categories__search p {
     padding: 20px;
     color: #9b9b9b;
+}
+
+@media (min-width: 720px) {
+    .header {
+        height: 20vh;
+        padding: 0 10vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        z-index: 3;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* .header a {
+        width: 50%;
+        height: 50%;
+    }
+
+    .header a .logo {
+        width: 40%;
+        height: 100%;
+    } */
+
+    .buscar {
+        background-color: var(--primary-color);
+        display: none;
+        position: absolute;
+        top: calc(20vh - 1px);
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 0 0;
+    }
+
+    .menu {
+        height: calc(80vh + 2px);
+        top: calc(20vh - 1px);
+    }
+
+    .menu ul li {
+        margin: 10px 4px;
+    }
+
+    .menu ul li a,
+    details summary {
+        font-size: 1.5rem;
+    }
+
+    .spacing .gap {
+        height: 20vh;
+    }
+
+    .section {
+        height: 70vh;
+    }
+
+    .section img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .grafico {
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .grafico img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .ads {
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        background: url('../assets/bg-ads.png');
+    }
+    .ads img {
+        height: 80%;
+        width: auto;
+    }
+
+    .section .texts {
+        position: absolute;
+        bottom: 0;
+        padding: 5px 0 0 10vw;
+        align-content: end;
+        width: 60%;
+        height: 45%;
+    }
+
+    .section .texts h2 {
+        margin: 15px 0;
+        font-size: 1.5rem;
+        padding: 0 4px;
+    }
+
+    .section .texts a {
+        margin: 4px 0;
+        padding: 2px 2px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+
+    .section .texts span {
+        font-size: 0.9rem;
+        font-weight: 100;
+        padding-top: 15px;
+        margin-left: 5px;
+        padding-top: 15px;
+    }
 }
