@@ -31,7 +31,9 @@ close.addEventListener('click', ()=>{
 menuIcon.addEventListener('click', ()=>{
     menuIcon.style.display = 'none';
     closeMenu.style.display = 'block';
-    menu.style.width = "60%";
+    if(window.screen.width > 1024)
+        menu.style.width = "40%";
+    else menu.style.width = "60%";
     fecharBusca()
 });
 

@@ -222,7 +222,7 @@ details summary {
 }
 
 .social {
-    padding: 0 3vw 2vh;
+    padding-bottom: 2vh;
 
     display: flex;
     flex-direction: column;
@@ -417,6 +417,24 @@ details summary {
         align-items: center;
     }
 
+    .search {
+        width: 50px;
+    }
+
+    .close {
+        width: 60px;
+        display: none;
+    }
+    
+    .close_menu {
+        display: none;
+    }
+    
+    .close_menu,
+    .menu_icon {
+        width: 100px
+    }
+
     /* .header a {
         width: 50%;
         height: 50%;
@@ -442,12 +460,25 @@ details summary {
         padding: 10px 0 0 0;
     }
 
+    .buscar__search input {
+        height: 50px;
+    }
+
+    .buscar__search input::placeholder {
+        font-size: 1.2rem;
+    }
+
     .menu {
         height: calc(80vh + 2px);
         top: calc(20vh - 1px);
     }
 
-    .menu ul li {
+    .menu > * {
+        padding-right: 11vw;
+    }
+
+    .menu ul li,
+    details {
         margin: 10px 4px;
     }
 
@@ -456,13 +487,24 @@ details summary {
         font-size: 1.5rem;
     }
 
+    details li {
+        font-size: 1.2rem;
+    }
+
     .spacing .gap {
         height: 20vh;
     }
 
-    .section {
-        height: 70vh;
+    .spacing {
+        width: 80vw;
+        margin: 0 auto;
     }
+
+    .section {
+        height: 60vh;
+        margin: 5vh 0;
+    }
+
 
     .section img {
         width: 100%;
@@ -500,7 +542,7 @@ details summary {
     .section .texts {
         position: absolute;
         bottom: 0;
-        padding: 5px 0 0 10vw;
+        padding: 5px 0 0 5vw;
         align-content: end;
         width: 60%;
         height: 45%;
@@ -526,5 +568,27 @@ details summary {
         padding-top: 15px;
         margin-left: 5px;
         padding-top: 15px;
+    }
+
+    .section .texts .categoria {
+        padding: 0 12px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .header {
+        padding: 0 15vw;
+    }
+    
+    .buscar {
+        padding: 10px 5vw 0;
+    }
+
+    .menu > * {
+        padding-right: 16vw;
+    }
+
+    .spacing {
+        width: 70vw;
     }
 }
