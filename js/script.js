@@ -25,18 +25,30 @@ search.addEventListener('click', ()=>{
 });
 
 close.addEventListener('click', ()=>{
-    fecharBusca()
+    fecharBusca();
 });
 
 menuIcon.addEventListener('click', ()=>{
     menuIcon.style.display = 'none';
     closeMenu.style.display = 'block';
-    if(window.screen.width > 1024)
-        menu.style.width = "40%";
-    else menu.style.width = "60%";
+    
+    // menu.style.width = "50%";
+    menu.style.width = getMenuWidth();
+    
     fecharBusca()
 });
 
-closeMenu.addEventListener('click', ()=>{
+closeMenu.addEventListener('click', () => {
     fecharMenu();
 });
+
+// ------ Devaneios ------
+
+function getMenuWidth() {
+    const header = document.querySelector('.header');
+    const larguraMinimaItensMenu = 180;
+
+    const headerPaddingRight = Number((getComputedStyle(header).paddingRight).split('p')[0]);
+    
+    return ((headerPaddingRight + larguraMinimaItensMenu) + 'px');
+}

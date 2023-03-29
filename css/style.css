@@ -1,3 +1,50 @@
+@font-face {
+    font-family: 'averta-regularitalic';
+    src: url('../assets/fonts/averta/averta_italic/averta-regularitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/averta/averta_regular/averta-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'averta-light';
+    src: url('../assets/fonts/averta/averta_light/averta-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/averta/averta_light/averta-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'averta-lightitalic';
+    src: url('../assets/fonts/averta/averta_lightitalic/averta-lightitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/averta/averta_lightitalic/averta-lightitalic-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'averta-regular';
+    src: url('../assets/fonts/averta/averta_regular/averta-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/averta/averta_regular/averta-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'averta-semibold';
+    src: url('../assets/fonts/averta/averta_semibold/averta-semibold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/averta/averta_semibold/averta-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'averta-semibolditalic';
+    src: url('../assets/fonts/averta/averta_semibolditalic/averta-semibolditalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/averta/averta_semibolditalic/averta-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*  TODO */
+/* EDITAR AS FONTES */
+/* CONSERTAR AS FOTOS */
+/* E TODO O RESTO '-' */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +52,16 @@
     font-family: "Averta-Regular";
     list-style: none;
     text-decoration: none;
+    font-size: 16px;
     color: #fff;
 }
 
 :root {
-    --primary-color: #0037d6;
-
+    --primary-color: #003BD1;
+    --primary-color-left: #023BD2;
+    --primary-color-right: #4779FF;
+    --primary-color-gradient: linear-gradient(90deg, rgba(2,59,210,1) 0%, rgba(71,121,255,1) 80%);
+    --border-bottom-color: #497AFE;
     --sustentabilidade: #22a591;
     --cultura: #fe7105;
     --economia: #01adff;
@@ -45,12 +96,14 @@
 
 .spacing .gap {
     height: 11vh;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-color: transparent;
+    margin: 0 5vw;
 }
 
 /* header menu */
 .header {
-    background-color: var(--primary-color);
+    background: var(--primary-color-gradient);
     height: 11vh;
     width: 100%;
     padding: 0 5vw;
@@ -58,74 +111,85 @@
     top: 0;
     left: 0;
 
-    display: flex;
+    /* display: flex; */
     z-index: 3;
 
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+.header-navbar {
+    height: 100%;
+
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header>a {
-    height: 100%;
+/* .header-navbar > a { */
+.a-logo {
+    height: 60%;
 
     display: flex;
+    align-items: center;
 }
 
-.header a .logo {
-    height: 70%;
-    align-self: center;
+.header .logo {
+    height: 100%;
 }
 
 .header .container {
+    height: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
-.search {
-    width: 35px;
-}
-
-.close {
-    width: 40px;
-    display: none;
-}
-
-.close_menu {
-    display: none;
-}
-
+.search,
+.close,
 .close_menu,
 .menu_icon {
-    width: 60px;
+    height: 30%;
+    width: auto;
+    cursor: pointer;
+}
+
+.close,
+.close_menu {
+    display: none;
 }
 
 /* menu de busca */
 
 .buscar {
-    background-color: var(--primary-color);
+    background: var(--primary-color-gradient);
     display: none;
     position: absolute;
     top: calc(11vh - 1px);
     right: 0;
 
     width: 100%;
+    padding: 0 5vw;
     max-height: 0;
     overflow: hidden;
     transition: .3s;
 
+    border-bottom: 5px solid var(--border-bottom-color);
+
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .buscar__search {
-    width: 80%;
+    width: 100%;
+    padding: 0 10px;
     height: 80%;
     background-color: #fff;
     border-radius: 10px;
-    padding: 0 10px;
-    margin-bottom: 3vh;
+    margin: 1.5vh 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -144,11 +208,6 @@
     color: #6e6e6e;
 }
 
-/* .buscar__search a {
-    width: 10%;
-
-} */
-
 .buscar__search-img {
     width: 25px;
     height: 25px;
@@ -159,11 +218,13 @@
 .menu {
     width: 0;
     height: 90vh;
-    background-color: var(--primary-color);
+    /* background: var(--primary-color); */
+    /* background: linear-gradient(90deg, rgba(2,59,210,1) 0%, rgba(71,121,255,1) 60%); */
+    background: var(--primary-color-gradient);
     opacity: .9;
     position: absolute;
     right: 0;
-    top: calc(11vh - 1px);
+    top: calc(11vh + 4px);
     transition: width .3s;
     overflow: hidden;
 
@@ -173,18 +234,20 @@
 }
 
 .menu > * {
-    padding-right: 8%;
+    padding-right: 5vw;
 }
 
 .menu ul {
+    /* background-color: #e3d53c; */
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
     padding-top: 10px;
 }
 
-.menu ul li {
+.menu ul li, details {
     margin: 4px;
 }
 
@@ -197,12 +260,16 @@
 
 details {
     text-align: right;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 details summary {
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+details summary:hover {
+    cursor: pointer;
 }
 
 /* .social {
@@ -228,6 +295,11 @@ details summary {
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
+}
+
+.social > a {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .social .logo_firjan {
@@ -264,7 +336,7 @@ details summary {
 
 }
 
-.grafico {
+/* .grafico {
     width: 100%;
     height: 70vh;
     position: relative;
@@ -274,7 +346,7 @@ details summary {
 .grafico img {
     width: 100%;
     height: 100%;
-}
+} */
 
 .ads {
     display: flex;
@@ -286,21 +358,24 @@ details summary {
 .ads span {
     color: black;
     align-self: flex-start;
-    padding-left: 40px;
+    padding-left: 5vw;
+}
+
+.ads img {
+    object-fit: contain;
 }
 
 .section .texts {
     position: absolute;
     bottom: 0;
-    padding: 5px 20px;
-    width: 60%;
+    padding-left: 5vw;
+    width: 40%;
     height: 50%;
 }
 
 .section .texts h2 {
     margin-top: 5px;
     font-size: 14px;
-
 }
 
 .categoria {
@@ -311,14 +386,15 @@ details summary {
 }
 
 .section .texts span {
+    font-family: 'averta-lightitalic';
     font-size: 10px;
     font-weight: 100;
 }
 
 .section img {
-    width: 100%;
     height: 30vh;
-    position: absolute;
+    width: 100%;
+    object-fit: cover;
 }
 
 .ads img {
@@ -360,12 +436,13 @@ details summary {
     flex-wrap: wrap;
     gap: 10px;
     padding: 20px;
+    padding-bottom: 12vh;
 }
 
 .btn__categories {
     background-color: transparent;
     border-radius: 5px;
-    padding: 2px 3px;
+    padding: 2px 8px;
     color: #9b9b9b;
     border: 1px solid #9b9b9b;
     text-transform: uppercase;
@@ -406,58 +483,13 @@ details summary {
 
 @media (min-width: 720px) {
     .header {
-        height: 20vh;
+        height: 15vh;
         padding: 0 10vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        z-index: 3;
-        justify-content: space-between;
-        align-items: center;
     }
-
-    .search {
-        width: 50px;
-    }
-
-    .close {
-        width: 60px;
-        display: none;
-    }
-    
-    .close_menu {
-        display: none;
-    }
-    
-    .close_menu,
-    .menu_icon {
-        width: 100px
-    }
-
-    /* .header a {
-        width: 50%;
-        height: 50%;
-    }
-
-    .header a .logo {
-        width: 40%;
-        height: 100%;
-    } */
 
     .buscar {
-        background-color: var(--primary-color);
-        display: none;
-        position: absolute;
-        top: calc(20vh - 1px);
-        right: 0;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: .3s;
-        display: flex;
-        justify-content: center;
-        padding: 10px 0 0 0;
+        top: calc(15vh - 1px);
+        padding: 0 10vw;
     }
 
     .buscar__search input {
@@ -469,42 +501,30 @@ details summary {
     }
 
     .menu {
-        height: calc(80vh + 2px);
-        top: calc(20vh - 1px);
+        top: calc(15vh + 4px);
+        height: 85vh;
     }
 
     .menu > * {
-        padding-right: 11vw;
-    }
-
-    .menu ul li,
-    details {
-        margin: 10px 4px;
+        padding-right: 10vw;
     }
 
     .menu ul li a,
     details summary {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     details li {
-        font-size: 1.2rem;
+        font-size: .9rem;
     }
 
     .spacing .gap {
-        height: 20vh;
-    }
-
-    .spacing {
-        width: 80vw;
-        margin: 0 auto;
+        height: calc(15vh + 4px);
     }
 
     .section {
-        height: 60vh;
-        margin: 5vh 0;
+        height: 500px;
     }
-
 
     .section img {
         width: 100%;
@@ -528,21 +548,24 @@ details summary {
 
     .ads {
         width: 100%;
-        height: 50vh;
+        height: 400px;
         overflow: hidden;
         position: relative;
         margin: 0 auto;
-        background: url('../assets/bg-ads.png');
     }
+
+    .ads span {
+        padding-left: 10vw;
+    }
+
     .ads img {
         height: 80%;
-        width: auto;
     }
 
     .section .texts {
         position: absolute;
         bottom: 0;
-        padding: 5px 0 0 5vw;
+        padding-left: 10vw;
         align-content: end;
         width: 60%;
         height: 45%;
@@ -573,22 +596,33 @@ details summary {
     .section .texts .categoria {
         padding: 0 12px;
     }
-}
 
-@media (min-width: 1366px) {
-    .header {
-        padding: 0 15vw;
-    }
-    
-    .buscar {
-        padding: 10px 5vw 0;
+    .main__categories {
+        margin: 0 auto;
     }
 
-    .menu > * {
-        padding-right: 16vw;
+    .categories__options {
+        width: 60%;
     }
 
-    .spacing {
-        width: 70vw;
+    .categories{
+        padding-bottom: 12vh;
+    }
+
+    .categories__options,
+    .filter {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .categories h2 {
+        margin-left: 10vw;
+        padding-top: 4vh;
+        
+    }
+
+    .load {
+        width: 60%;
+        margin: 15px 20%;
     }
 }
