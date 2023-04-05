@@ -4,16 +4,19 @@
 }
 
 .main-img {
+    max-height: 500px;
     width: 100%;
+    object-fit: cover;
 }
 
 .content {
-    padding: 0 8vw 0;
+    padding: 0 5vw 0;
 }
 
 .category-share {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.6em 0;
     flex-wrap: wrap;
 }
@@ -25,11 +28,11 @@
 }
 
 .share img {
-    height: 0.8em;
+    height: 20px;
 }
 
 .share span {
-    font-family: 'Averta-ThinItalic', sans-serif;
+    font-family: 'averta-lightitalic', sans-serif;
     font-size: 0.8em;
     color: var(--content-text-color);
 }
@@ -43,23 +46,25 @@
 }
 
 .content-datetime {
-    font-family: 'Averta-ThinItalic', sans-serif;
+    font-family: 'averta-regularitalic', sans-serif;
     font-size: .6em;
     color: var(--content-text-color);
 }
 
 .title {
-    font-family: 'Averta-ExtraThin';
-    font-size: 1.2rem;
-    color: var(--title);
+    font-family: 'Averta-Regular';
     text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--title);
 }
 
 .title span {
-    font-family: 'Averta-Regular';
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-family: 'averta-light';
+    font-weight: 100;
+    font-size: 1rem;
     color: var(--title);
+    
 }
 
 .content-title hr{
@@ -69,7 +74,7 @@
 .content-text {
     color: var(--content-text-color);
     text-align: justify;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .content-text img{
@@ -78,12 +83,12 @@
 }
 
 main {
-    padding-bottom: 2em;
+    padding-bottom: 5vh;
 }
 
 @media (min-width: 720px) {
     .content {
-        padding: 0 4vw 0;
+        padding: 3vh 10vw 0;
     }
     
     .category-share {
@@ -98,10 +103,6 @@ main {
         gap: 8px;
     }
     
-    .share img {
-        height: 1em;
-    }
-    
     .share span {
         font-size: 1em;
     }
@@ -114,60 +115,17 @@ main {
     .content-datetime {
         font-size: 0.8em;
     }
-    
-    .content-text {
-        font-size: 1em;
-    }
-    
-    .content-text img{
-        padding: 2em 0;
-    }
-}
 
-@media (min-width: 1366px) {
-    .content {
-        padding: 0 4vw 0;
-    }
-    
-    .category-share {
-        padding: 0.8em 0;
-    }
-
-    .categoria {
-        font-size: 1em;
-    }
-    
-    .share {
-        gap: 10px;
-    }
-    
-    .share img {
-        height: 1.1em;
-    }
-    
-    .share span {
-        font-size: 1.2em;
-    }
-    
-    .content-title {
-        padding: 2em 0 2.5em;
-        gap: 10px;
-    }
-    
-    .content-datetime {
-        font-size: 1em;
-    }
-    
     .title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .title span {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
     }
     
     .content-text {
-        font-size: 1.3em;
+        font-size: 1em;
     }
     
     .content-text img{
