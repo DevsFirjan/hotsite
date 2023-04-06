@@ -64,7 +64,7 @@
     font-weight: 100;
     font-size: 1rem;
     color: var(--title);
-    
+
 }
 
 .content-title hr{
@@ -90,23 +90,23 @@ main {
     .content {
         padding: 3vh 10vw 0;
     }
-    
+
     .category-share {
         padding: 0.7em 0;
     }
 
-    .categoria {
+    /* .categoria {
         font-size: 0.8em;
-    }
-    
+    } */
+
     .share {
         gap: 8px;
     }
-    
+
     .share span {
         font-size: 1em;
     }
-    
+
     .content-title {
         padding: 1.5em 0 2em;
         gap: 8px;
@@ -123,11 +123,11 @@ main {
     .title span {
         font-size: 1.6rem;
     }
-    
+
     .content-text {
         font-size: 1em;
     }
-    
+
     .content-text img{
         padding: 2em 0;
     }

@@ -331,7 +331,7 @@ details summary:hover {
     padding: 2px 5px;
     border-radius: 5px;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 0.5rem;
     background-color: var(--bg-category) ;
 }
 
@@ -392,10 +392,10 @@ details summary:hover {
 }
 
 .btn__categories {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     background-color: transparent;
     border-radius: 5px;
-    padding: 2px 8px;
+    padding: 2px 5px;
     color: #9b9b9b;
     border: 1px solid #9b9b9b;
     text-transform: uppercase;
@@ -403,11 +403,7 @@ details summary:hover {
     cursor: pointer;
 }
 
-.btn__categories:hover {
-    color: #FFF;
-    background-color: var(--bg-category);
-}
-
+.btn__categories:hover,
 .btn__categories-active {
     color: #FFF;
     background-color: var(--bg-category);
@@ -573,12 +569,9 @@ details summary:hover {
         padding: 0 4px;
     }
 
-    .section .texts a {
-        margin: 4px 0;
-        padding: 2px 2px;
-        border-radius: 5px;
-        text-transform: uppercase;
-        font-size: 1.1rem;
+    .categoria {
+        font-size: 0.8rem;
+        padding: 2px 10px;
     }
 
     .section .texts span {
@@ -589,32 +582,28 @@ details summary:hover {
         padding-top: 15px;
     }
 
-    .section .texts .categoria {
-        padding: 0 12px;
-    }
-
     /* Categories e Search */
 
     .main__pages {
         margin: 0 auto;
     }
 
-    .categories__options {
-        width: 60%;
+    .categories__options,
+    .filter {
+        width: 80%;
+        margin: 0 auto;
     }
 
     .categories {
         padding-bottom: 10%;
     }
 
-    .about__header {
-        padding-bottom: 7%;
+    .btn__categories {
+        
     }
 
-    .categories__options,
-    .filter {
-        width: 80%;
-        margin: 0 auto;
+    .about__header {
+        padding-bottom: 7%;
     }
 
     .categories h2,
